@@ -21,7 +21,7 @@ Examples:
     	#Substraction negative test case
     	| 	% 			|   /			|		-			| =			| 	Error		|
     	#Division postive test case
-    	| 	8 			|   2			|		/			| =			| 	4			|
+    	| 	6 			|   3			|		/			| =			| 	2			|
     	#Division negative test case
     	| 	- 			|   /			|		/			| =			| 	Error		|
 

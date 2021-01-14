@@ -1,7 +1,6 @@
-22:52:36.038 [main] INFO  resources.Base - driver is initialized
-22:53:32.521 [main] INFO  resources.Base - navigate to calc page
-22:53:32.543 [main] INFO  resources.Base - values are entered and operator action performed
-22:53:33.305 [main] INFO  resources.Base - Screenshot captured, cropped and stored in project directory
-22:53:38.099 [main] INFO  resources.Base - driver is initialized
-22:54:57.596 [main] INFO  resources.Base - navigate to calc page
-22:54:57.626 [main] INFO  resources.Base - values are entered and operator action performed
+23:36:54.618 [main] INFO  resources.Base - values are entered and operator action performed
+23:36:55.454 [main] INFO  resources.Base - Screenshot captured, cropped and stored in project directory
+23:36:58.583 [main] INFO  resources.Base - driver is initialized
+23:37:10.440 [main] INFO  resources.Base - navigate to calc page
+23:37:10.459 [main] INFO  resources.Base - values are entered and operator action performed
+23:37:11.556 [main] INFO  resources.Base - Screenshot captured, cropped and stored in project directory
