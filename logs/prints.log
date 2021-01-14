@@ -1,4 +1,4 @@
-22:48:36.101 [main] INFO  resources.Base - Screenshot captured, cropped and stored in project directory
-22:48:45.585 [main] INFO  resources.Base - driver is initialized
-22:51:06.529 [main] INFO  resources.Base - navigate to calc page
-22:51:07.676 [main] INFO  resources.Base - driver is initialized
+23:37:14.750 [main] INFO  resources.Base - driver is initialized
+23:37:27.774 [main] INFO  resources.Base - navigate to calc page
+23:37:27.801 [main] INFO  resources.Base - values are entered and operator action performed
+23:37:28.822 [main] INFO  resources.Base - Screenshot captured, cropped and stored in project directory

@@ -1,12 +1,14 @@
 package stepDefinitions;
 
 import org.testng.annotations.AfterMethod;
-
+import org.testng.annotations.BeforeMethod;
 
 import calc.xendit_qa_assessment.CalcAction;
 
 import org.testng.AssertJUnit;
 import java.util.List;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,8 +23,8 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 
-//import org.testng.annotations.Test;
-//@Test
+import org.testng.annotations.Test;
+@Test
 
 @RunWith(Cucumber.class)
 public class StepDefinition extends Base {
@@ -77,7 +79,12 @@ public class StepDefinition extends Base {
 			System.out.println("Nothing to do with it");
 		}
 	}
-
+	
+	@BeforeMethod
+	public void beforeScenario() 
+	{
+	     //
+	}
 	
 	@AfterMethod
 	public void afterScenario() 
