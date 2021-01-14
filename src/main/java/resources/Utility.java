@@ -30,7 +30,7 @@ public class Utility {
 			int eleHeight = ele.getSize().getHeight();
 
 			// Crop the entire page screenshot to get only element screenshot
-			BufferedImage eleScreenshot = fullImg.getSubimage(point.getX() + 1100, point.getY() + 40, eleWidth - 300,
+			BufferedImage eleScreenshot = fullImg.getSubimage(point.getX() + 1000, point.getY() + 40, eleWidth - 200,
 					eleHeight - 440);
 			ImageIO.write(eleScreenshot, "png", screenshot);
 

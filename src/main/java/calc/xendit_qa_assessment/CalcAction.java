@@ -1,4 +1,4 @@
-package resources;
+package calc.xendit_qa_assessment;
 
 import java.io.IOException;
 
@@ -11,13 +11,13 @@ public class CalcAction {
 
 	public static void performCalculation(WebDriver driver, DataTable data) throws IOException {
 
-		  String str_ConcatValue = "";
-	        
-	        for (int i = 0; i < data.cells().size(); i++) {
-	        	 System.out.println(data.cell(i,1));
-	        	 str_ConcatValue = str_ConcatValue.concat(data.cell(i,1));
-	        }
-	        
+		String str_ConcatValue = "";
+
+		for (int i = 0; i < data.cells().size(); i++) {
+			System.out.println(data.cell(i, 1));
+			str_ConcatValue = str_ConcatValue.concat(data.cell(i, 1));
+		}
+
 	    System.out.println(str_ConcatValue);
         driver.switchTo().frame(0);
 	      JavascriptExecutor js = (JavascriptExecutor) driver;

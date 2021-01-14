@@ -1,26 +1,28 @@
 package stepDefinitions;
 
-import java.util.List;
-import org.junit.runner.RunWith;
+import org.testng.annotations.AfterMethod;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+
+import calc.xendit_qa_assessment.CalcAction;
+
+import org.testng.AssertJUnit;
+import java.util.List;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
 import resources.Base;
-import resources.CalcAction;
 import resources.TestImage;
 import resources.Utility;
 import io.cucumber.datatable.DataTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.openqa.selenium.By;
 
-
+//import org.testng.annotations.Test;
+//@Test
 
 @RunWith(Cucumber.class)
 public class StepDefinition extends Base {
@@ -50,6 +52,8 @@ public class StepDefinition extends Base {
 	public void i_should_be_able_to_see(List<List<String>> dataTable) throws Throwable {
 
 		DataTable data = DataTable.create(dataTable);
+		String expectedValue = data.cell(0, 1).trim();
+		
 		System.out.println("Expected Value: " + data.cell(0, 1));
 
 		try {
@@ -61,9 +65,9 @@ public class StepDefinition extends Base {
 			log.info("Screenshot captured, cropped and stored in project directory");
 			Thread.sleep(1000);
 			String textData = TestImage.getTextFromImage(capturedPath);
-			System.out.println("Actual Value: " + textData);
+			System.out.println("Actual Value: " + textData.trim());
 
-			Assert.assertEquals(textData, data.cell(0, 1));
+			AssertJUnit.assertEquals(textData.trim(), expectedValue);
 			
 			Thread.sleep(1000);
 			
@@ -73,18 +77,13 @@ public class StepDefinition extends Base {
 			System.out.println("Nothing to do with it");
 		}
 	}
+
 	
-	@Before
-	public void beforeScenario() 
-	{
-	     //
-	}
-	
-	@After
+	@AfterMethod
 	public void afterScenario() 
 	{
-		//driver.close();
-		//driver.quit();
+		driver.close();
+		driver.quit();
 	}
 
 }

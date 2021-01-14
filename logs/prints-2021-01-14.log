@@ -1,0 +1,7 @@
+22:39:58.900 [main] INFO  resources.Base - values are entered and operator action performed
+22:40:00.019 [main] INFO  resources.Base - Screenshot captured, cropped and stored in project directory
+22:40:04.213 [main] INFO  resources.Base - driver is initialized
+22:40:59.688 [main] INFO  resources.Base - navigate to calc page
+22:46:40.044 [main] INFO  resources.Base - driver is initialized
+22:48:35.173 [main] INFO  resources.Base - navigate to calc page
+22:48:35.207 [main] INFO  resources.Base - values are entered and operator action performed
