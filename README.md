@@ -16,4 +16,5 @@ To perform action on specific buttoon eiother we need to rely on action classes 
 
 *Step 6- Using tess4j library we gets text from cropped image and peforemd equalassertion of expected value with actual value.
 
+*Step 7- Run as Testng Test
  
